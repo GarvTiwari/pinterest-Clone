@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+
+<div class="w-full h-screen bg-zinc-200 flex items-center justify-center">
+ <div class="w-[30vw] bg-white px-10 mx-10  py-10 rounded-[30px]">
+
+<h1 class="text-4xl tracking-tight text-center
+capitalize  leading-none font-semibold text-stone-800 mb-10">Create New Account.</h1>
+    <form action="/register" method="post">
+        <input  
+        class=" border-2 rounded-md block mt-3 w-full px-3 py-3"
+        type="text" name="username" placeholder="Enter your username">
+        <input 
+        class="border-2 rounded-md  block mt-3 px-3 py-2 w-full"
+        type = "text" placeholder="Enter the FullName" name = "fName">
+
+        <input  
+        class=" border-2 rounded-md block mt-3 w-full px-3 py-3 input[type=number]"
+        type="number" name="contact" placeholder="Contact">
+
+        <input 
+        class="border-2 rounded-md  block mt-3 w-full px-3 py-2"
+        type="email" placeholder="enter your email" name = "email">
+        <input 
+        class="border-2 rounded-md  block mt-3 px-3 py-2 w-full"
+        type = "password" placeholder="Enter the password" name = "password">
+
+
+  
+
+        <input class="block mt-5 w-full px-3 py-2 bg-red-600 text-white rounded-full" 
+        value = "Create New Account" type="submit" class="mt-2"  >
+
+     <p class="text-xs  text-zinc-800 mt-3 text-center font-semibold mx-auto mx-auto">By continuing,you agree to Pinterest's Terms of Service;</p>
+       
+    </form>
+    <a class="inline-block mt-3 font-semibold text-zinc-700 text-center w-full" href="/">Login Existing Account</a>
+   </div>
+</div>
+
+
+
+
+
+
+<%- include('partials/footer') %>
